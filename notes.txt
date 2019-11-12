@@ -1,0 +1,28 @@
+loads
+	consistent draws
+	instantaneous draws
+storage
+	examples
+		battery - high storage, low power
+		capacitor - low storage, high power
+	dimensions
+		storage
+		power
+sources
+	examples
+		wind varies over time with wind, no inertia
+		solar varies over time with sun and clouds, no inertia
+		nuclear high power, slow to change power
+		hydro has limited reservoir
+		diesel generator can cold start
+	dimensions
+		variability
+		cold start
+		power
+		ramp
+		fuel availability
+		inertia
+when load changes, energy is taken from the inertia of the grid
+governors are responsible for keeping the inertia such that the whole thing goes at 60Hz
+when power station is producing much more than grid requires, generator goes asynchronous - no power to grid, all power to heat => explosion
+when power grid is producing much more than required, all generators speed up until one explodes
